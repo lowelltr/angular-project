@@ -1,3 +1,6 @@
+//SearchService(http) is our database for Api information
+//Get is th method that pulls the info from the api
+//Url is the location of the Api
 "use strict";
 function SearchService($http){
     const vm= this;
@@ -9,8 +12,9 @@ function SearchService($http){
                 return response;
             })    
     };
+//this empty array was built to store info from the api
     vm.favoriteFoods = [];
-
+//Set and getters are used to carry info from component to component. 
     vm.setFavorites=(newItem)=> {
         vm.favoriteFoods.push(newItem);
         console.log(vm.favoriteFoods);
@@ -20,13 +24,12 @@ function SearchService($http){
     vm.getFavorites=()=> {
         return vm.favoriteFoods;
     }
-   
-    
     
 }
 
 angular.module("Food")
 .service("SearchService",SearchService);
+//build service this sets all the methods used within the controllers.
 
 
 

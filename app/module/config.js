@@ -1,4 +1,5 @@
 "use strict"
+// this is our train station, this allows the user to travel throughout the pages 
 angular
 .module("Food",["ngRoute"])
 .config(["$routeProvider",($routeProvider)=>{

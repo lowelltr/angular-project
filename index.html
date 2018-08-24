@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="Food">
+<html lang="en" ng-app="Food"> 
+ <!-- ng-app links all component to angular---> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <Nav>
-<a href="#!/search-criteria">Search</a>
-<a href="#!/favorites-page">My Favorites</a>
-    </Nav>
     <ng-view></ng-view>
     <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
     <script                     src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>

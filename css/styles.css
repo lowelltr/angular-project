@@ -1,0 +1,85 @@
+* {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  
+  
+  /* ID's ----------------------------------------------------------------------------------*/
+  #search {
+    background: #FCECD9;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 70%;
+    height: 45%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow:  0px 0px 40px 5px #B58480;
+    /*padding-top: 60px;*/
+    border-top: 20px solid #F21F44;
+  }
+  
+  /*class -------------------------------------------------------------------------------------------*/
+  .data {
+    background: red;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    list-style: none;
+  }
+  
+  /* Basic elements ---------------------*/
+  
+  label {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+  }
+  
+  h1 {
+    color: #F21F44;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+  }
+  
+  button {
+    border-style: none;
+    background: #F21F44;
+    font-family: 'Lobster', cursive;
+    color: white;
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  button:hover {
+     background: #DACABE;
+  }
+  
+  input {
+    width: 70%;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    
+  }
+  
+  #body{
+    background-image: url("./images/seed.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #foodresults{
+      display: flex;
+      flex-wrap: wrap;
+}
+#add{
+    width: 10%;
+
+}
