@@ -8,7 +8,7 @@ const searchCriteria = {
     template:`
     <div id ="body">
     <section id="search">
-    <h1>search</h1>
+    <h1>What's for Dinner???</h1>
     <label>Ingredients:</label>
     <input type="text" ng-model="$ctrl.ingredientOne">
     <label>Exclude:</label>
@@ -23,7 +23,9 @@ const searchCriteria = {
     <option value="low-carb">Low Carb
     </select>
 
-    <button ng-click="$ctrl.search($ctrl.ingredientOne,$ctrl.excludes,$ctrl.diet);">Search For Recipes</button>
+    <button ng-click="$ctrl.search($ctrl.ingredientOne,$ctrl.excludes,$ctrl.diet);">Search For Recipes</button> 
+    <button id ="fav"ng-click="$ctrl.flip()"> My Favorites </button>
+
     </section>
 
     <section id ="foodresults">
@@ -31,7 +33,7 @@ const searchCriteria = {
      <button ng-click="$ctrl.add(item.recipe)"id="add">add to favorites </button></p>
     
     <p ng-repeat="list in item.recipe.ingredientLines">{{list}}</p>
-    <button id ="fav"ng-click="$ctrl.flip()"> My Favorites </button>
+   
 
     </section>
     </div>

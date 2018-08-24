@@ -1,18 +1,18 @@
 "use strict";
 const favoritesPage={
     template:`
+    <div id="bodytwo">
     <section class="favorites">
         <h2> My Favorite Foods</h2>
         <ul>
             
             <li ng-repeat="newItem in $ctrl.newItem"newItem="newItem">{{newItem.label}}
             <img src="{{newItem.image}}">
-            <button ng-click="$ctrl.remove(index)">X</button></li>
+            <button ng-click="$ctrl.remove(index)">Remove</button></li>
         </ul>   
         <button ng-click="$ctrl.search()">return to search</button>
-
-
     </section>
+    </div>
     `,
     //this controller injects our service functions and allows us to view our array favorite foods and remove what we dont want in our favorites list
 controller: ["SearchService","$location",function(SearchService,$location){
