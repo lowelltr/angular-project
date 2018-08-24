@@ -17,12 +17,12 @@
     border-radius: 5px;
     box-shadow:  0px 0px 40px 5px #B58480;
     /*padding-top: 60px;*/
-    border-top: 20px solid #F21F44;
+  
   }
   
   /*class -------------------------------------------------------------------------------------------*/
   .ng-binding{
-    background: #DACABE;
+    background: #B58480;
     margin: 20px;
     border-radius: 5px;
     padding: 20px;
