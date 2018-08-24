@@ -26,16 +26,18 @@ const searchCriteria = {
     <button ng-click="$ctrl.search($ctrl.ingredientOne,$ctrl.excludes,$ctrl.diet);">Search For Recipes</button>
     </section>
 
-    <section id ="foodresults"
+    <section id ="foodresults">
     <p ng-repeat="item in $ctrl.recipes">{{item.recipe.label}}<img src="{{item.recipe.image}}"> <a href="{{item.recipe.url}}" target="_blank">Url</a>
      <button ng-click="$ctrl.add(item.recipe.label)"id="add">add to favorites </button></p>
     
     <p ng-repeat="list in item.recipe.ingredientLines">{{list}}</p>
+    <button id ="fav"ng-click="$ctrl.flip()"> My Favorites </button>
+
     </section>
     </div>
     `,
     //this controller pulls our information from the Api
-    controller: ["SearchService",function(SearchService){
+    controller: ["SearchService","$location",function(SearchService,$location){
         const vm=this;
         vm.search=(ingredientOne,excludes,diet)=>{
             SearchService.recipeSearch(ingredientOne,excludes,diet).then((response)=>
@@ -47,6 +49,9 @@ const searchCriteria = {
         vm.add= (newItem)=>{
             SearchService.setFavorites(newItem);
            // $location.path("/favorites-page");
+        }
+        vm.flip=()=>{
+            $location.path("/favorites-page");
         }
     }]
 };
