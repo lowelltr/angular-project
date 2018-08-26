@@ -28,7 +28,6 @@
     border-radius: 5px;
     padding: 20px;
     width: 300px;
-    list-style: none;
     font-family: 'Lato', sans-serif;
     font-size: 35px;
   }
@@ -91,7 +90,7 @@
 
 }
 #add{
-    width: 100px;
+    width: 300px;
 }
 #fav{
     width:100px;
@@ -128,4 +127,15 @@ ul{
 .return{
   display: flex;
   justify-content: center;
+}
+a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+#remove{
+  margin-left: 100px;
+}
+#img{
+  border-radius: 15px;
 }

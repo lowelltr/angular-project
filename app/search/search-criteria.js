@@ -29,7 +29,7 @@ const searchCriteria = {
     </section>
 
     <section id ="foodresults">
-    <p ng-repeat="item in $ctrl.recipes">{{item.recipe.label}}<img src="{{item.recipe.image}}"> <a href="{{item.recipe.url}}" target="_blank">More Info</a>
+    <p ng-repeat="item in $ctrl.recipes">{{item.recipe.label}}<img src="{{item.recipe.image}}"id="img"> <a href="{{item.recipe.url}}" target="_blank">More Info</a>
      <button ng-click="$ctrl.add(item.recipe)"id="add">add to favorites </button></p>
     
     <p ng-repeat="list in item.recipe.ingredientLines">{{list}}</p>

@@ -7,8 +7,8 @@ const favoritesPage={
         <ul>
             
             <li ng-repeat="newItem in $ctrl.newItem"newItem="newItem">{{newItem.label}}
-            <img src="{{newItem.image}}">
-            <button ng-click="$ctrl.remove(index)">Remove</button></li>
+            <img src="{{newItem.image}}"id="img">
+            <button id="remove" ng-click="$ctrl.remove(index)">Remove</button></li>
         </ul>   
         <button id="return" ng-click="$ctrl.search()">return to search</button>
     </section>
