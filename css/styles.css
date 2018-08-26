@@ -48,6 +48,8 @@
   }
   
   button {
+    display: flex;
+    justify-content: center;
     border-style: none;
     background: #322C29;
     font-family: 'Lato', sans-serif;
@@ -100,6 +102,8 @@ h2{
   font-family: 'Lato', sans-serif;
   font-size: 40px;
   color: #F21F44;
+  padding: 10px;
+
 }
 #bodytwo{
   background-image: url("./images/seed.jpg");
@@ -107,10 +111,21 @@ h2{
   background-repeat: no-repeat;
   height: 500vh;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+}.favorites{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+}
+.return{
+  display: flex;
+  justify-content: center;
 }

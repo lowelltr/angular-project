@@ -10,7 +10,7 @@ const favoritesPage={
             <img src="{{newItem.image}}">
             <button ng-click="$ctrl.remove(index)">Remove</button></li>
         </ul>   
-        <button ng-click="$ctrl.search()">return to search</button>
+        <button id="return" ng-click="$ctrl.search()">return to search</button>
     </section>
     </div>
     `,
