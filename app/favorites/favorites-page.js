@@ -5,9 +5,9 @@ const favoritesPage={
     <section class="favorites">
         <h2> My Favorite Foods</h2>
         <ul>
-            
             <li ng-repeat="newItem in $ctrl.newItem"newItem="newItem">{{newItem.label}}
             <img src="{{newItem.image}}"id="img">
+            <a href="{{newItem.url}}" target="_blank">More Info</a>
             <button id="remove" ng-click="$ctrl.remove(index)">Remove</button></li>
         </ul>   
         <button id="return" ng-click="$ctrl.search()">return to search</button>
